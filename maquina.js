@@ -27,8 +27,8 @@ function obtenerNumeroInput(mensaje) {
 
 document.write("<h1>Calculadora de interés</h1>");
 
-const principal = obtenerNumeroInput("Cuánta guita pusiste?:");
-const tasa = obtenerNumeroInput("Decime la tasa de interés (%):");
+const principal = obtenerNumeroInput("Cuánta guita estás invirtiendo?:");
+const tasa = obtenerNumeroInput("Decime la tasa de interés anual (%):");
 const tiempo = obtenerNumeroInput("Por cuántos años vas a dejarla laburando?:");
 
 calcularInteres(principal, tasa, tiempo);
