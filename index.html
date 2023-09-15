@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
-<body>
-    <script src="maquina.js"></script>
+
+<body onload="mostrarResultadosGuardados()">
+    <h1>Calculadora de interés</h1>
+    <form id="calcularForm">
+        <label for="principal">Cuánta guita estás invirtiendo?:</label>
+        <input type="number" id="principal" required><br><br>
+        
+        <label for="tasa">Decime la tasa de interés anual (%):</label>
+        <input type="number" id="tasa" required><br><br>
+        
+        <label for="tiempo">Por cuántos años vas a dejarla laburando?:</label>
+        <input type="number" id="tiempo" required><br><br>
+        
+        <input type="submit" value="Calcular Interés">
+    </form>
+    <button id="eliminarResultadoButton">Eliminar Resultado</button>
+    <button id="limpiarLocalStorageButton">Eliminar Resultados Guardados</button>
+    <div id="resultado"></div>
+    <div id="resultadosGuardados"></div>
+    <script src="script.js"></script>
 </body>
+
 </html>
