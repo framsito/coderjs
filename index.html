@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body onload="mostrarResultadosGuardados()">
@@ -18,13 +19,25 @@
         <label for="tiempo">Por cuántos años vas a dejarla laburando?:</label>
         <input type="number" id="tiempo" required><br><br>
         
-        <input type="submit" value="Calcular Interés">
+        <input type="submit" value="Calcular Interés"><br><br>
     </form>
-    <button id="eliminarResultadoButton">Eliminar Resultado</button>
-    <button id="limpiarLocalStorageButton">Eliminar Resultados Guardados</button>
+    <button id="eliminarResultadoButton">Eliminar resultado actual</button><br><br>
+    <button id="limpiarLocalStorageButton">Eliminar resultados guardados</button><br><br>
     <div id="resultado"></div>
     <div id="resultadosGuardados"></div>
-    <script src="script.js"></script>
+    <table id="tablaDatos" border="3">
+        <thead>
+            <tr>
+                <th>Plata inicial</th>
+                <th>Tasa de interés</th>
+                <th>Tiempo</th>
+                <th>Ganancia del interés</th>
+                <th>Monto Total</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,25 @@
+{
+    "interesAnterior": [
+      {
+        "inicial": 200,
+        "interes": 3,
+        "tiempo": 11,
+        "ganancia": 66,
+        "monto": 266
+      },      
+      {
+        "inicial": 25050.00,
+        "interes": 30,
+        "tiempo": 4,
+        "ganancia": 30060,
+        "monto": 55110
+      },      
+      {
+        "inicial": 1000,
+        "interes": 50,
+        "tiempo": 10,
+        "ganancia": 5000,
+        "monto": 6000
+      }
+    ]
+  }
